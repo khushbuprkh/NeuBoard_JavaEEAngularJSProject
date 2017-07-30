@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.neu.edu.User" table="usertable">
+    <id column="id" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <property column="firstName" name="firstName" type="string"/>
+    <property column="lastName" name="lastName" type="string"/>
+    <property column="dob" name="dob" type="date"/>
+    <property column="emailId" name="emailId" type="string"/> 
+    <property column="gender" name="gender" type="string"/>
+    <property column="phoneNumber" name="phoneNumber" type="string"/>
+    <one-to-one name="userAccount" class="com.neu.edu.pojo.UserAccount"
+            cascade="save-update"></one-to-one>
+    <one-to-one name="address" class="com.neu.edu.pojo.Address"
+            cascade="save-update"></one-to-one>
+    <one-to-one name="roleType" class="com.neu.edu.pojo.RoleType"
+            cascade="save-update"></one-to-one>
+  </class>
+</hibernate-mapping>

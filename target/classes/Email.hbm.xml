@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.yusuf.spring.pojo.Email" table="email">
+    <id column="id" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <property column="emailFrom" name="emailFrom" type="string"/>
+    <property column="emailTo" name="emailTo" type="string"/>
+    <property column="subject" name="subject" type="string"/>
+    <property column="content" name="content" type="string"/>
+    <property column="attachment" name="attachment" type="string"/>
+  </class>
+</hibernate-mapping>

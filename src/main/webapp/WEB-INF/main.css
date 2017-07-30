@@ -1,0 +1,36 @@
+
+/*.Sidebar
+{
+	height:1000%;
+}
+*/
+.course
+{
+	border: 1px solid black;
+	border-radius: 25px;
+}
+.mainpage
+{
+	
+}
+
+.blackboard
+{
+	margin: 20px
+}
+
+.bgcolor
+{
+
+	background-color: #8A0829;
+	color: #ffffff;
+}
+
+.loginpage{
+	background-color: #000000;
+	color:#ffffff;
+}
+
+.cntrbtn {
+    text-align: center;
+}

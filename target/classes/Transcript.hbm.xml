@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.neu.edu.Transcript" table="transcript">
+    <id column="id" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <property column="grade" name="grade" type="string"/>
+    <property column="remarks" name="remarks" type="string"/>
+    <property column="marks" name="marks" type="integer"/>
+    <one-to-one name="student" class="com.neu.edu.pojo.Student"
+            cascade="save-update"></one-to-one>
+    <one-to-one name="courses" class="com.neu.edu.pojo.Courses"
+            cascade="save-update"></one-to-one>
+  </class>
+</hibernate-mapping>

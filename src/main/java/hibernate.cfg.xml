@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/NeuBoard</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">root</property>
+
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.show_sql">true</property>
+
+		<mapping class="com.neu.edu.pojo.User"/>
+ 		<!-- <mapping class="com.neu.edu.pojo.UserAccount"/> -->
+ 		<mapping class="com.neu.edu.pojo.Address"/>	
+ 		<mapping class="com.neu.edu.pojo.Teacher"/>
+ 		<mapping class="com.neu.edu.pojo.Student"/>
+		<mapping class="com.neu.edu.pojo.Admin"/>
+		<mapping class="com.neu.edu.pojo.Courses"/>
+		<mapping class="com.neu.edu.pojo.Assignment"/>
+		<mapping class="com.neu.edu.pojo.Email"/>
+		<mapping class="com.neu.edu.pojo.Messages"/>
+		<mapping class="com.neu.edu.pojo.Transcript"/>
+		<mapping class="com.neu.edu.pojo.Contents"/>
+		<mapping class="com.neu.edu.pojo.Department"/> 
+		<mapping class="com.neu.edu.pojo.UploadFile"/> 
+		<!--<mapping class="com.neu.edu.pojo.Anouncements"/> -->
+			
+
+	</session-factory>
+</hibernate-configuration>

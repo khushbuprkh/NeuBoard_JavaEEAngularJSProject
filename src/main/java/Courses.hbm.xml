@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.yusuf.spring.pojo.Courses" table="courses">
+    <id column="id" name="id" type="long">
+      <generator class="native"/>
+    </id>
+    <property column="crn" name="crn" type="string"/>
+    <property column="name" name="name" type="string"/>
+    <property column="startDate" name="startDate" type="string"/>
+    <property column="endDate" name="endDate" type="string"/>
+    <property column="attachment" name="attachment" type="string"/>
+  </class>
+</hibernate-mapping>
